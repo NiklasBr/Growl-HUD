@@ -1,0 +1,15 @@
+*{padding:0;margin:0;}
+html,body{margin:2px 0 0 2px;height:75px;width:270px;}
+#top_bg{float:left;position:relative;background-color:transparent;left:0;top:0;height:19px;width:270px;background:url('top-bar.png') no-repeat top left;}
+#background{z-index:-1;float:left;position:relative;background-color:transparent;width:270px;background:url('middle-stretcher.png') repeat-y top left;padding-top:8px;}
+#bottom_bg{float:left;position:relative;background-color:transparent;width:270px;height:9px;z-index:-1;background:url('bottom-bar.png') no-repeat top left;}
+#icon{float:left;top:-4px;padding-left:12px;height:100%;width:32px;}
+#icon img{position:relative;max-width:32px;max-height:32px;}
+#title{position:absolute;text-align:center;margin:0 18px 0 0;top:3px;right:0;font:8pt 'Lucida grande';color:#fff;font-weight:normal;width:225px;height:15px;overflow:hidden;}
+#text{top:-2px;position:relative;width:200px;font:8pt 'Lucida grande';color:#e8e8e8;margin-left:56px;overflow:hidden;}
+.priorities{z-index:5;position:absolute;float:right;right:0;top:0;width:71px;height:71px;}
+#verylow{background:url('low.png') no-repeat top right;}
+#moderate{background:url('moderate.png') no-repeat top right;}
+#normal{background:url('1pxtransparent.png') no-repeat top right;}
+#high{background:url('high.png') no-repeat top right;}
+#emergency{background:url('emergency.png') no-repeat top right;}
