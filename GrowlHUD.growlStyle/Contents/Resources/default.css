@@ -1,5 +1,5 @@
 *{padding:0;margin:0;}
-html,body{margin: 3px;width:270px;font: normal 8pt 'Lucida grande';color:#fff;background-color: black;}
+html,body{width:270px;font: normal 8pt 'Lucida grande';color:#fff;}
 
 #title {
 	-webkit-border-top-left-radius: 7px;
