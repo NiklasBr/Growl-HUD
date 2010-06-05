@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
 <title>Growl notification</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
 <base href="%baseurl%" />
-<style type="text/css">#top_bg, #background, #bottom_bg, #close_button, .priorities { opacity:%opacity%; }</style>
-<style type="text/css">@import URL("default.css");</style>
-
+<style type="text/css">#background, #title, .priorities { opacity:%opacity%; }</style>
+<style type="text/css">@import URL('default.css');</style>
 </head>
 <body>
-
 <div id="background">
-	<div id="%priority%" class="priorities"><img src"%priority%.png" alt="" /></div>
-	<div id="title">%title%</div>
-  <div id="icon"><img alt="icon" /></div>
+	<div id="title">Inspector (Growl)</div>
+	<div id="%priority%" class="priorities"><img src="%priority%.png" alt=""></div>
+  <div id="icon"><img src="" alt="icon"></div>
   <div id="text">
-    <script type="text/javascript" charset="utf-8">
-    	inString = "%text%";
+    <script>
+    	var inString = "%text%";
     	document.write(inString.split("_").join("_<wbr />").split("/").join("/<wbr />").split("/<wbr />>").join("/>").split(".").join(".<wbr />"));
   	  </script>
   	</div>
 </div>
-
 </body>
 </html>

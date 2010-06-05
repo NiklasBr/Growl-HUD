@@ -1,16 +1,17 @@
 *{padding:0;margin:0;}
-html,body{width:270px;font: normal 8pt 'Lucida grande';color:#fff;}
+html,body{margin: 3px;width:270px;font: normal 8pt 'Lucida grande';color:#fff;background-color: black;}
 
 #title {
 	-webkit-border-top-left-radius: 7px;
 	-webkit-border-top-right-radius: 7px;
 	background-image: -webkit-gradient( 
 			linear, 0% 0%, 0% 100%, 
-			from(rgba(112, 112, 112, 0.9)), 
-			color-stop(0.5, rgba(120, 120, 120, 0.9)), 
-			color-stop(0.51, rgba(100, 100, 100, 0.9)), 
-			to(rgba(90, 90, 90, 0.9)));
+			from(rgba(90, 90, 90, 1)), 
+			color-stop(0.47, rgba(100, 100, 100, 1)), 
+			color-stop(0.53, rgba(70, 70, 70, 1)), 
+			to(rgba(70, 70, 70, 1)));
 	height:15px;
+	margin: 0 0 5px 0;
 	overflow:ellipsis;
 	padding:0;
 	text-align:center;
@@ -18,17 +19,21 @@ html,body{width:270px;font: normal 8pt 'Lucida grande';color:#fff;}
 
 #background {
 	-webkit-border-radius: 7px;
-	background: rgba(30, 30, 30, 0.9);
-	min-height: 50px;
+	min-height: 60px;
+	background-color: rgba(40, 40, 40, 0.9);
+	border: 0.1em outset #808080;
 }
 
 
 
 
 #icon{float:left;top:-4px;padding-left:12px;height:100%;width:32px;}
-#icon img{position:relative;max-width:32px;max-height:32px;}
-#text{top:-2px;position:relative;width:200px;font:8pt 'Lucida grande';margin-left:56px;overflow:hidden;}
-.priorities{z-index:5;position:absolute;float:right;right:0;top:0;width:71px;height:71px;}
+#icon img{max-width:32px;max-height:32px;}
+#text{font:8pt 'Lucida grande';margin-left:56px;overflow:ellipsis;}
+
+
+
+.priorities{z-index:5;float:right;width:71px;height:71px;}
 #verylow{background:url('low.png') no-repeat top right;}
 #moderate{background:url('moderate.png') no-repeat top right;}
 #normal{background:url('1pxtransparent.png') no-repeat top right;}
