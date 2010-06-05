@@ -10,12 +10,23 @@
 <body>
 <div id="background">
 	<div id="title">%title%</div>
-	<div id="%priority%" class="priorities"><img src="%priority%.png" alt=""></div>
+	<div id="high" class="priorities">
+		<span class="prio">Emergency</span>
+		<span class="prio">High</span>
+		<span class="prio">Moderate</span>
+		<span class="prio">Low</span>
+		<span class="prio">Normal</span>
+		<span class="prio">Very Low</span>
+	</div>
+	
   <div id="icon"><img src="" alt="icon"></div>
   <div id="text">
     <script>
+		/* 
+			TODO: Make wbr adhere to HTML5 standard
+		*/
     	var inString = "%text%";
-    	document.write(inString.split("_").join("_<wbr />").split("/").join("/<wbr />").split("/<wbr />>").join("/>").split(".").join(".<wbr />"));
+    	document.write(inString.split("_").join("_<wbr>").split("/").join("/<wbr />").split("/<wbr />>").join("/>").split(".").join(".<wbr />"));
   	  </script>
   	</div>
 </div>
